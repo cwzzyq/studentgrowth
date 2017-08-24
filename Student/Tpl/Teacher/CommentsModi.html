@@ -1,0 +1,98 @@
+<include file="Public:jsheader" />
+	<link rel="stylesheet" href="__PUBLIC__/css/style.css"/>
+        <center>
+	<div id="middle"><h3>这里是学生评价模块<p>
+  学号： <{$data1['StudentID']}> 姓名： <{$data1['XingMing']}></h4></h3><h4>
+	
+	<table width="90%" border="1" id="table-4">
+      <tr>
+        <td width="15%">学期数</td>
+        <td width="49%">成长记录</td>
+        <td width="21%">班主任评语</td>
+        <td width="15%">功能</td>
+      </tr>
+      <tr>
+        <td>1</td>
+	<td><volist name="data11" id="vo">
+		目标：<{$vo.Target}>,做法：<{$vo.Recorder}>,评价：<{$vo.ZwPingJia}><br>
+		录入时间：<{$vo.LuRuShiJian}><br>
+		</volist>
+	</td>
+	<td><{$data12[0]['Comment']}></td>
+        <td><a href="__APP__/Teacher/TeacherComment2/XueQiShu/1/Comment/<{$data12[0]['Comment']}>" class="btn btn-success" role="button">重新评价</a></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td><volist name="data21" id="vo">
+		目标：<{$vo.Target}>,做法：<{$vo.Recorder}>,评价：<{$vo.ZwPingJia}><br>
+		录入时间：<{$vo.LuRuShiJian}><br>
+		</volist>
+	</td>
+        <td><{$data22[0]['Comment']}></td>
+        <td><a href="__APP__/Teacher/TeacherComment2/XueQiShu/2/Comment/<{$data22[0]['Comment']}>" class="btn btn-success" role="button">	重新评价</a>
+	</td>
+      </tr>
+      <tr>
+        <td>3
+	</td>
+        <td><volist name="data31" id="vo">
+		目标：<{$vo.Target}>,做法：<{$vo.Recorder}>,评价：<{$vo.ZwPingJia}><br>
+		录入时间：<{$vo.LuRuShiJian}><br>
+		</volist>
+	</td>
+        <td><{$data32[0]['Comment']}></td>
+        <td><a href="__APP__/Teacher/TeacherComment2/XueQiShu/3/Comment/<{$data32[0]['Comment']}>" class="btn btn-success" role="button">	重新评价</a></td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td><volist name="data41" id="vo">
+		目标：<{$vo.Target}>,做法：<{$vo.Recorder}>,评价：<{$vo.ZwPingJia}><br>
+		录入时间：<{$vo.LuRuShiJian}><br>
+		</volist>
+	</td>
+        <td><{$data42[0]['Comment']}></td>
+        <td><a href="__APP__/Teacher/TeacherComment2/XueQiShu/4/Comment/<{$data42[0]['Comment']}>" class="btn btn-success" role="button">	重新评价</a></td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td><volist name="data51" id="vo">
+		目标：<{$vo.Target}>,做法：<{$vo.Recorder}>,评价：<{$vo.ZwPingJia}><br>
+		录入时间：<{$vo.LuRuShiJian}><br>
+		</volist></td>
+        <td><{$data52[0]['Comment']}></td>
+        <td><a href="__APP__/Teacher/TeacherComment2/XueQiShu/5/Comment/<{$data52[0]['Comment']}>" class="btn btn-success" role="button">			重新评价</a></td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>><volist name="data61" id="vo">
+		目标：<{$vo.Target}>,做法：<{$vo.Recorder}>,评价：<{$vo.ZwPingJia}><br>
+		录入时间：<{$vo.LuRuShiJian}><br>
+		</volist></td>
+        <td><{$data62[0]['Comment']}></td>
+        <td><a href="__APP__/Teacher/TeacherComment2/XueQiShu/6/Comment/<{$data62[0]['Comment']}>" class="btn btn-success" role="button">			重新评价</a></td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td><volist name="data71" id="vo">
+		目标：<{$vo.Target}>,做法：<{$vo.Recorder}>,评价：<{$vo.ZwPingJia}><br>
+		录入时间：<{$vo.LuRuShiJian}><br>
+		</volist></td>
+        <td><{$data72[0]['Comment']}></td>
+        <td><a href="__APP__/Teacher/TeacherComment2/XueQiShu/7/Comment/<{$data72[0]['Comment']}>" class="btn btn-success" role="button">			重新评价</a></td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td><volist name="data81" id="vo">
+		目标：<{$vo.Target}>,做法：<{$vo.Recorder}>,评价：<{$vo.ZwPingJia}><br>
+		录入时间：<{$vo.LuRuShiJian}><br>
+		</volist></td>
+        <td><{$data82[0]['Comment']}></td>
+        <td><a href="__APP__/Teacher/TeacherComment2/XueQiShu/8/Comment/<{$data82[0]['Comment']}>" class="btn btn-success" role="button">			重新评价</a></td>
+      </tr>
+  </table></td>
+		
+		</div>
+		</center>
+	
+
+  <include file="Public:footer" />

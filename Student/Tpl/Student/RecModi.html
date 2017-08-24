@@ -1,0 +1,37 @@
+<include file="Public:header" />
+	<link rel="stylesheet" href="__PUBLIC__/css/style.css" />
+	<center>
+	<div id="middle">
+	<table border='1' width="90%" id="table-4" margin:0px auto>
+		<th>编号</th>       
+		<th>目标</th>       		
+		<th>做法</th>       
+		<th>评价</th>
+		<th>功能</th>
+	  
+	      <volist name="datarec" id="vo">
+	      <form action="__APP__/Student/recSave"  method='POST'>
+		<tr>
+	        <input type='hidden' name='ID' value="<{$vo.ID}>">
+		<td><{$vo.ID}></td>
+		<td>新目标<input type="text" name=txttarget value=<{$vo.Target}>></td>
+		<td><br>新做法<input type="text" name=txtrecord value=<{$vo.Recorder}>></td>
+		<td><{$vo.ZwPingJia}><br>新评价<select name="SelZWPJ">
+				<option>非常满意</option>
+				<option>满意</option>			
+				<option>一般</option>
+				<option>不满意</option>
+			</select></td>
+			<td><input type="submit"value="修改" class="btn btn-success" role="button"><br/> </td>
+		</tr>
+		</form>
+		</volist>
+
+	</table>	
+	</div>
+	</center>
+
+	<include file="Public:footer" />
+
+
+

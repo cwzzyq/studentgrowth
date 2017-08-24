@@ -1,0 +1,24 @@
+<include file="Public:jsheader" />
+	
+<center>
+<div id="middle"><h3>这里是教师功能显示模块</h3>
+<table width="90%" border="1" id="table-4">
+  	<tr>
+    <td width="70%">班级信息</td>
+    <td width="20%">功能</td>
+    <td width="10%">备注</td>
+  </tr>
+  <volist name='data2' id='vo'>
+  <tr>
+ 
+	  <td>班级编号：<{$vo.ClassID}>班级名称：<{$vo.ClassName}>入学时间：<{$vo.RXSJ}> 
+	  </td>
+	<td><a href="__APP__/Teacher/TeacherClassManager/ClassID/<{$vo.ClassID}>" class="btn btn-success" role="button">评价</a></td>
+	<td>备注</td>
+   
+  </tr>
+   </volist>
+</table>	
+</div>
+</center>
+<include file="Public:footer" />

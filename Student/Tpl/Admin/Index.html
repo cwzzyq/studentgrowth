@@ -1,0 +1,80 @@
+<include file="Public:adheader" />
+
+<div class="container">
+  	<div class="row">
+		<div class="col-lg-4 col-md-6 col-sm-6">
+      		<h2>第一步导入\出学生基本信息表</h2>
+            <strong>请选择电子表格文件用于上传
+			<form action="__URL__/StudentImport" enctype="multipart/form-data" method="post" >
+				<input type="file" name="excel" />
+				<input type="submit" value="提交" >
+			</form>
+			</br><a href="__URL__/exportstudent" target="_blank">导出</a>
+    	</div>
+    	<div class="col-lg-4 col-md-6 col-sm-6">
+      		<h2>第二步导入\出教师信息信息</h2>
+      		<div class="media">
+        		<div class="media-left"> <a href="#"> <img class="media-object" src="file:///E|/web/images/35X35.gif" alt="..."> </a></div>
+        	<div class="media-body">
+          		<h4 class="media-heading"></h4>
+          		请选择电子表格文件用于上传
+				<form action="__URL__/TeacherImport" enctype="multipart/form-data" method="post" >
+					<input type="file" name="excel" />
+					<input type="submit" value="提交" >
+				</form>
+			</br> 
+			</div>
+      	</div>
+    	<div class="media">
+        	<div class="media-left"> <a href="#"> <img class="media-object" src="file:///E|/web/images/35X35.gif" alt="..."> </a> </div>
+        		<div class="media-body">
+          		<h4 class="media-heading">导出教师基本信息表</h4>
+          		<a href="__URL__/exportteacher" target="_blank">导出</a> 
+        		</div>
+      		</div>
+    	</div>
+    	<div class="col-lg-4 col-sm-12">
+      		<h2>第五步成长记录评价信息导出</h2>
+      		<a href="__URL__/exportteacherComment" target="_blank">导出</a></p>
+    	</div>
+  	</div>
+
+
+  	<div class="row">
+		<div class="col-lg-4 col-md-6 col-sm-6">
+      		<h2>第三步导入\出学生专业部信息表</h2>
+            <strong>请选择电子表格文件用于上传
+			<form action="__URL__/departmentImport" enctype="multipart/form-data" method="post" >
+				<input type="file" name="excel" />
+				<input type="submit" value="提交" >
+			</form>
+			</br><a href="__URL__/exportdepartment" target="_blank">导出</a>
+    	</div>
+    	<div class="col-lg-4 col-md-6 col-sm-6">
+      		<h2>第四导入\出班级信息</h2>
+      		<div class="media">
+        		<div class="media-left"> <a href="#"> <img class="media-object" src="file:///E|/web/images/35X35.gif" alt="..."> </a></div>
+        	<div class="media-body">
+          		<h4 class="media-heading"></h4>
+          		请选择电子表格文件用于上传
+				<form action="__URL__/ClassImport" enctype="multipart/form-data" method="post" >
+					<input type="file" name="excel" />
+					<input type="submit" value="提交" >
+				</form>
+			</br> 
+			</div>
+      	</div>
+    	<div class="media">
+        	<div class="media-left"> <a href="#"> <img class="media-object" src="file:///E|/web/images/35X35.gif" alt="..."> </a> </div>
+        		<div class="media-body">
+          		<h4 class="media-heading">导出班级基本信息表</h4>
+          		<a href="__URL__/ClassExport" target="_blank">导出</a> 
+        		</div>
+      		</div>
+    	</div>
+    	
+  	</div>
+</div>
+
+
+<include file="Public:footer" />

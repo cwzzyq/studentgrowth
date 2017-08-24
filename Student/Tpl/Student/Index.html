@@ -1,0 +1,287 @@
+<include file="Public:header" />
+	<!-- 第一学期控制代码 -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-3 col-sm-6">
+      <div class="panel panel-default panel-success"> 
+        <!-- Default panel contents -->
+        <div class="panel-heading">
+          <h3>第一学期</h3>
+        </div>
+        <!-- Table -->
+        <table class="table">
+          <thead>
+            <tr>
+              <th>记录</th>
+              <th>评价</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row"><volist name="data11" id="vo">
+		<{$key}>目标:<{$vo.Target}>做法：<{$vo.Recorder}>
+		自我评价：<{$vo.ZwPingJia}>
+		<br>
+		</volist></th>
+            <th>老师评语<br>
+		<{$data12[0]['Comment']}><br>
+		时间：<{$data12[0]['LuRuShiJian']}></th>
+            </tr>
+            
+            <tr>
+              <th scope="row"><p class="text-center"><a href="__APP__/Student/RecModi/XueQiShu/1" class="btn-success btn"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>修改记录</p></th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <!-- 第二学期代码 -->
+<div class="col-lg-3 col-sm-6">
+      <div class="panel panel-default panel-warning"> 
+        <!-- Default panel contents -->
+        <div class="panel-heading">
+          <h3>第二学期</h3>
+        </div>
+        <!-- Table -->
+        <table class="table">
+          <thead>
+            <tr>
+             <th>记录</th>
+              <th>评价</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row"><volist name="data21" id="vo">
+		<{$key}>目标:<{$vo.Target}>做法：<{$vo.Recorder}>
+		自我评价：<{$vo.ZwPingJia}>
+		<br>
+		</volist></th>
+            <th>老师评价<br>
+		<{$data22[0]['Comment']}><br>
+		时间：<{$data22[0]['LuRuShiJian']}></th>
+            </tr>
+            
+            <tr>
+              <th scope="row"><p class="text-center"><a href="__APP__/Student/RecModi/XueQiShu/2" class="btn-warning btn"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>修改记录</a></p>
+              </th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+
+<div class="col-lg-3 col-sm-6">
+      <div class="panel panel-default panel-info"> 
+        <!-- Default panel contents -->
+        <div class="panel-heading">
+          <h3>第三学期</h3>
+        </div>
+        <!-- Table -->
+        <table class="table">
+          <thead>
+            <tr>
+              <th>记录</th>
+              <th>评价</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row"><volist name="data31" id="vo">
+		<{$key}>目标:<{$vo.Target}>做法：<{$vo.Recorder}>
+		自我评价：<{$vo.ZwPingJia}>
+		<br>
+		</volist></th>
+            <th>评语<br>
+		<{$data32[0]['Comment']}><br>
+		时间：<{$data32[0]['LuRuShiJian']}></th>
+            </tr>
+             <tr>
+              <th scope="row"><p class="text-center"><a href="__APP__/Student/RecModi/XueQiShu/3" class="btn-info btn"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>修改记录</a></p></th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+
+<div class="col-lg-3 col-sm-6">
+      <div class="panel panel-default panel-danger"> 
+        <!-- Default panel contents -->
+        <div class="panel-heading">
+          <h3>第四学期</h3>
+        </div>
+        <!-- Table -->
+        <table class="table">
+          <thead>
+            <tr>
+              <th>记录</th>
+              <th>评价</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row"><volist name="data41" id="vo">
+		<{$key}>目标:<{$vo.Target}>做法：<{$vo.Recorder}>
+		自我评价：<{$vo.ZwPingJia}>
+		<br>
+		</volist></th>
+            <th>评语<br>
+		<{$data42[0]['Comment']}><br>
+		时间：<{$data42[0]['LuRuShiJian']}></th>
+            </tr>
+            
+            <tr>
+              <th scope="row"><p class="text-center"><a href="__APP__/Student/RecModi/XueQiShu/4" class="btn-danger btn"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>修改记录</a></p></th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <hr>
+
+  <div class="col-lg-3 col-sm-6">
+      <div class="panel panel-default panel-success"> 
+        <!-- Default panel contents -->
+        <div class="panel-heading">
+          <h3>第五学期</h3>
+        </div>
+        <!-- Table -->
+        <table class="table">
+          <thead>
+            <tr>
+              <th>记录</th>
+              <th>评价</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row"><volist name="data51" id="vo">
+		<{$key}>目标:<{$vo.Target}>做法：<{$vo.Recorder}>
+		自我评价：<{$vo.ZwPingJia}>
+		<br>
+		</volist></th>
+            <th>评语<br>
+		<{$data52[0]['Comment']}><br>
+		时间：<{$data52[0]['LuRuShiJian']}></th>
+            </tr>
+            
+            <tr>
+              <th scope="row"><p class="text-center"><a href="__APP__/Student/RecModi/XueQiShu/5" class="btn-success btn"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>修改记录</p></th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <!-- 第二学期代码 -->
+<div class="col-lg-3 col-sm-6">
+      <div class="panel panel-default panel-warning"> 
+        <!-- Default panel contents -->
+        <div class="panel-heading">
+          <h3>第六学期</h3>
+        </div>
+        <!-- Table -->
+        <table class="table">
+          <thead>
+            <tr>
+             <th>记录</th>
+              <th>评价</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row"><volist name="data61" id="vo">
+		<{$key}>目标:<{$vo.Target}>做法：<{$vo.Recorder}>
+		自我评价：<{$vo.ZwPingJia}>
+		<br>
+		</volist></th>
+            <th>评语<br>
+		<{$data62[0]['Comment']}><br>
+		时间：<{$data62[0]['LuRuShiJian']}></th>
+            </tr>
+            
+            <tr>
+              <th scope="row"><p class="text-center"><a href="__APP__/Student/RecModi/XueQiShu/6" class="btn-warning btn"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>修改记录</a></p>
+              </th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+
+<div class="col-lg-3 col-sm-6">
+      <div class="panel panel-default panel-info"> 
+        <!-- Default panel contents -->
+        <div class="panel-heading">
+          <h3>第七学期</h3>
+        </div>
+        <!-- Table -->
+        <table class="table">
+          <thead>
+            <tr>
+              <th>记录</th>
+              <th>评价</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row"><volist name="data71" id="vo">
+		<{$key}>目标:<{$vo.Target}>做法：<{$vo.Recorder}>
+		自我评价：<{$vo.ZwPingJia}>
+		<br>
+		</volist></th>
+            <th>评语<br>
+		<{$data72[0]['Comment']}><br>
+		时间：<{$data72[0]['LuRuShiJian']}></th>
+            </tr>
+             <tr>
+              <th scope="row"><p class="text-center"><a href="__APP__/Student/RecModi/XueQiShu/7" class="btn-info btn"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>修改记录</a></p></th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+
+<div class="col-lg-3 col-sm-6">
+      <div class="panel panel-default panel-danger"> 
+        <!-- Default panel contents -->
+        <div class="panel-heading">
+          <h3>第八学期</h3>
+        </div>
+        <!-- Table -->
+        <table class="table">
+          <thead>
+            <tr>
+              <th>记录</th>
+              <th>评价</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row"><volist name="data81" id="vo">
+		<{$key}>目标:<{$vo.Target}>做法：<{$vo.Recorder}>
+		自我评价：<{$vo.ZwPingJia}>
+		<br>
+		</volist></th>
+            <th>评语<br>
+		<{$data82[0]['Comment']}><br>
+		时间：<{$data82[0]['LuRuShiJian']}></th>
+            </tr>
+            
+            <tr>
+              <th scope="row"><p class="text-center"><a href="__APP__/Student/RecModi/XueQiShu/8" class="btn-danger btn"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>修改记录</a></p></th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+</div>
+	
+</div>
+	
+<include file="Public:footer" />
+

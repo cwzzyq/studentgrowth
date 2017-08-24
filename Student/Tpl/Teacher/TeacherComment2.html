@@ -1,0 +1,29 @@
+<include file="Public:jsheader" />
+	
+<center>
+<div id="middle">这里是教师功能显示模块
+
+</div>
+</center>
+   <form id="form1" name="form1" method="post" action="__APP__/Teacher/CommentsSave">
+      <table width="90%" align="center" id="table-4">
+        <tr>
+          <td>学号</td>
+	  <td><{$_SESSION['StudentID']}></td>
+          <td>学期数</td>
+	  <td><{$_GET['XueQiShu']}></td>
+        </tr>
+        <tr>
+          <td colspan="4"><label for="txtComment"></label>
+		  <textarea name="txtComment" id="txtComment" cols="100%" rows="5" ><{$_GET['Comment']}></textarea></td>
+          </tr>
+        <tr>
+          <td><input type="submit" name="cmdok" class="btn btn-success" value="提交" /></td>
+          
+        </tr>
+      </table>
+    </form></td>
+		
+	
+
+	<include file="Public:footer" />

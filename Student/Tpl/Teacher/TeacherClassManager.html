@@ -1,0 +1,40 @@
+<include file="Public:jsheader" />
+	
+        <center>
+	<div id="middle"><h3>当前管理的班级名称<{$data1['ClassName']}></h3>
+
+<table width="90%" border="1" id="table-4">
+	<tr>
+		<td>我的最新评价<td>
+	</tr>
+	<tr>
+		<td> <volist name="data3" id="vo">
+			编号:<{$vo.ID}>姓名：<{$vo.XingMing}> 评价内容:<{$vo.Comment}>录入时间：<{$vo.LuRuShiJian}><br>
+		    </volist>
+		<td>
+	</tr> 
+</table>
+
+<table width="90%" border="1" id="table-4">
+  <tr>
+    <td >学号</td>
+    <td>姓名</td>
+    <td >班级</td>
+    <td >评价管理</td>
+  </tr>
+  	<volist name="data2" id="vo">
+  <tr>
+
+	<td><{$vo.StudentID}></td>
+	<td><{$vo.XingMing}></td>
+	<td><{$vo.ClassName}></td>
+	<td><a href="__APP__/Teacher/CommentsModi/StudentID/<{$vo.StudentID}>" class="btn btn-success" role="button">评价</a></td>
+
+  </tr>
+	</volist>  
+</table>
+		
+		</div>
+		</center>
+	
+<include file="Public:footer"/>
